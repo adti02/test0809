@@ -12,6 +12,7 @@ spec:
     helm:
       valueFiles:
         - $values/apps/kube-prometheus-stack/values.yaml
+      skipCrds: false
   - repoURL: https://github.com/adti02/test0809.git
     targetRevision: main
     ref: values
