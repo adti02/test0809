@@ -1,0 +1,12 @@
+grafana:
+  ingress:
+    enabled: true
+    ingressClassName: traefik
+    hosts:
+      - grafana.local
+    path: /
+  adminPassword: admin123   # nur lokal, später ändern
+
+prometheus:
+  prometheusSpec:
+    retention: 7d

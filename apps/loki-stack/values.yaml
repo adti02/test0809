@@ -1,0 +1,6 @@
+promtail:
+  enabled: true
+
+loki:
+  persistence:
+    enabled: false   # für lokales Lernsetup ausreichend
